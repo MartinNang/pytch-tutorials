@@ -59,4 +59,5 @@ class Hover(pytch.Sprite):
 
     @pytch.when_I_receive("move")
     def move(self):
-        pass
+        self.glide_to_xy(Stage.current_column * 48, 0, 0)
+
